@@ -1,0 +1,13 @@
+name: Check Quality
+description: Check code Quality
+
+runs:
+  using: composite
+  steps:
+    - name: Lint code
+      run: npm run Lint
+      shell: bash
+
+    - name: Unit tests
+      run: npm run tests
+      shell: bash
