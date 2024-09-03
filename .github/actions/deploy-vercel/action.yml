@@ -35,6 +35,11 @@ runs:
         echo "DEPLOY_URL=$DEPLOY_URL" >> $GITHUB_ENV
       shell: bash
 
+    - name: run E2E tests
+      uses: '../check-e2e'
+      with:
+        deploy-url: process.DEPLOY_URL
+
     - name: Comment with preview URL
       if: ${{ inputs.mode == 'preview' }}
       uses: actions/github-script@v7

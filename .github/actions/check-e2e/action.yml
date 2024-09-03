@@ -2,10 +2,10 @@ name: Check Quality
 description: Check code Quality
 
 inputs:
-  mode:
-    description: 'Deployment mode'
+  deploy-url:
+    description: 'Deployment url'
     required: true
-    default: 'production'
+    default: 'http://localhost:3000'
 
 runs:
   using: composite
@@ -13,5 +13,5 @@ runs:
     - name: Run e2e
       run: npm run test:e2e
       env:
-        E2E_BASE_URL: https://op-fr-ci.vercel.app/
+        E2E_BASE_URL: ${{ inputs.deploy-url }}
       shell: bash
