@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import { Character } from '../../lib/rick-and-morty-api-client';
 
