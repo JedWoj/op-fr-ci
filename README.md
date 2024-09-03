@@ -1,4 +1,4 @@
-# Opanuj Frontend: AI Edition - Frontend Bootstrap - characters catalog
+# Opanuj Frontend: AI Edition - Frontend Bootstrap - characters catalogd
 
 ![](./_resources/img/header.png)
 
