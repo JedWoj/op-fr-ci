@@ -12,4 +12,6 @@ runs:
   steps:
     - name: Run e2e
       run: npm run test:e2e
+      env:
+        E2E_BASE_URL: https://op-fr-ci.vercel.app/
       shell: bash
