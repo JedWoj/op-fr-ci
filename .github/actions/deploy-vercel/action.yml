@@ -36,7 +36,7 @@ runs:
       shell: bash
 
     - name: run E2E tests
-      uses: './.github/check-e2e'
+      uses: '../check-e2e'
       with:
         deploy-url: process.DEPLOY_URL
 
