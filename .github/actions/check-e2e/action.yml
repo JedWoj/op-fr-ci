@@ -1,0 +1,15 @@
+name: Check Quality
+description: Check code Quality
+
+inputs:
+  mode:
+    description: 'Deployment mode'
+    required: true
+    default: 'production'
+
+runs:
+  using: composite
+  steps:
+    - name: Run e2e
+      run: npm run test:e2e
+      shell: bash
